@@ -1,1 +1,198 @@
-ola mundo
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--========== CAIXA DE ÍCONES ==========-->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+        <!--========== FAVICOM ==========-->
+        <link rel="shortcut icon" href="./img/eu.PNG" type="image/x-icon">
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+        <!--========== CSS ==========-->
+        <link rel="stylesheet" href="src/style.css">
+
+        <title>Portifólio Aguinaldo Morais</title>
+    </head>
+    <body>
+
+        <!--========== SCROLL TOP ==========-->
+        <a href="#" class="scrolltop" id="scroll-top">
+            <i class='bx bx-chevron-up scrolltop__icon'></i>
+        </a>
+
+        <!--========== HEADER ==========-->
+        <header class="l-header" id="header">
+            <nav class="nav bd-container">
+                <a href="#" class="nav__logo">Portifólio de Aguinaldo Morais</a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">Sobre mim</a></li>
+                        <li class="nav__item"><a href="#services" class="nav__link">Meus diferenciais</a></li>
+                        <li class="nav__item"><a href="#menu" class="nav__link">Projetos</a></li>
+                        <li class="nav__item"><a href="#contact" class="nav__link">Contato</a></li>
+
+                        <li><i class='bx bx-moon change-theme' id="theme-button"></i></li>
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main">
+            <!--========== HOME ==========-->
+            <section class="home" id="home">
+                <div class="home__container bd-container bd-grid">
+                    <div class="home__data">
+                        <h1 class="home__title">Olá,</h1>
+                        <h2 class="home__subtitle">Meu nome é <br> Aguinaldo Morais.</h2>
+                        <a href="#menu" class="button">Ver projetos</a>
+                    </div>
+    
+                    <img src="./img/eu.PNG" class="home__img">
+                </div>
+            </section>
+            
+            <!--========== ABOUT ==========-->
+            <section class="about section bd-container" id="about">
+                <div class="about__container  bd-grid">
+                    <div class="about__data">
+                        <span class="section-subtitle about__initial">Sobre mim</span>
+                        <h2 class="section-title about__initial">Suporte a sistemas e estudante de programação</h2>
+                        <p class="about__description">Possuo experiência em suporte à sistemas em ambiente de produção e estudo desenvolvimento de sistemas.</p>
+                        <a href="https://github.com/aguinaldomneto" class="button">Meu Github</a>
+                    </div>
+
+                    <img src="/img/no_computador.jpg" alt="" class="about__img">
+                </div>
+            </section>
+
+            <!--========== SERVICES ==========-->
+            <section class="services section bd-container" id="services">
+                <span class="section-subtitle">Benefícios</span>
+                <h2 class="section-title">Por que trabalhar comigo?</h2>
+
+                <div class="services__container  bd-grid">
+                    <div class="services__content">
+                        <h3 class="services__title">Foco no Cliente</h3>
+                        <p class="services__description"> Com foco no cliente prezo pelo bom atendimento e utilizo de metodologias ágeis para meus projetos, economizando tempo, recursos e maximizando resultados.</p>
+                    </div>
+
+                    <div class="services__content">
+                        <h3 class="services__title">Soft Skills</h3>
+                        <p class="services__description">Prezo pela qualidade no serviço e entregas eficientes, estou constantemente em estudo para meu desenvolvimento e qualidade nas entregas.</p>
+                    </div>
+
+                    <div class="services__content">
+                        <h3 class="services__title">Suporte a sistemas</h3>
+                        <p class="services__description">Grande experiência em suporte a sistemas que me agrega valor para melhorar o desempenho em manutenção do sistema.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!--========== MENU ==========-->
+            <section class="menu section bd-container" id="menu">
+                <span class="section-subtitle">Acesse meu Github para ter acesso a todos os projetos. <br> Clique no projeto que você deseja conhecer. </span>
+                <h2 class="section-title">Alguns dos meus projetos</h2>
+
+                <div class="menu__container bd-grid">
+                    <div class="menu__content">
+                        <a href="https://github.com/aguinaldomneto/jogos/tree/master/jogo%20snake" target="_blank" class="menu__name">- Jogo snake</a>
+                        <a href="https://github.com/aguinaldomneto/jogos/tree/master/jogo%20da%20memoria target="_blank" class="menu__name">- jogo da memória</a>
+                        <a href="https://github.com/aguinaldomneto/jogos/tree/master/jogo_da_nave" target="_blank" class="menu__name">- Jogo da cobrinha Python</a>
+                        <!-- <a href="https://github.com/FernandaMakiHirose/space-shooter" target="_blank" class="menu__name">- Jogo Space Shooter</a>
+                        <a href="https://github.com/FernandaMakiHirose/jogo-da-velha" target="_blank" class="menu__name">- Jogo da Velha</a>
+                        <a href="https://github.com/FernandaMakiHirose/jogo-super-mario" target="_blank" class="menu__name">- Jogo Super Mario</a> -->
+                    </div>
+
+                    <div class="menu__content">
+                        <a href="https://github.com/aguinaldomneto/Projeto-Netflix" target="_blank" class="menu__name">- Projeto Netflix</a>
+                        <a href="https://github.com/aguinaldomneto/pagina_da_web/tree/master/INSTAGRAM" target="_blank" class="menu__name">- Projeto página de login do Instagram</a>
+                        <!-- <a href="https://github.com/FernandaMakiHirose/python-jupyter" target="_blank" class="menu__name">- Python Jupyter</a>
+                        <a href="https://github.com/FernandaMakiHirose/python-exercicios" target="_blank" class="menu__name">- Exercícios de Python</a>
+                        <a href="https://github.com/FernandaMakiHirose/jogo-flappy-bird" target="_blank" class="menu__name">- Flappy Bird</a>
+                        <a href="https://github.com/FernandaMakiHirose/FernandaMakiHirose" target="_blank" class="menu__name">- Meu README.md personalizado</a> -->
+                    </div>
+                    
+                    <!-- <div class="menu__content">
+                        <a href="https://github.com/FernandaMakiHirose/bootstrap-portfolio" target="_blank" class="menu__name">- Portfólio com Bootstrap</a>
+                        <a href="https://github.com/FernandaMakiHirose/certificados" class="menu__name" target="_blank">- Meus certificados</a>
+                        <a href="https://github.com/FernandaMakiHirose/santander-app-mobile" target="_blank" class="menu__name">- Santander App Mobile</a>
+                        <a href="https://github.com/FernandaMakiHirose/instagram" target="_blank" class="menu__name">- Criando a tela inicial do Instagram</a>
+                        <a href="https://github.com/FernandaMakiHirose/santander-tela-de-cotacoes" target="_blank" class="menu__name">- Tela de cotações do Santander</a>
+                        <a href="https://github.com/FernandaMakiHirose/site-de-shows-responsivo" target="_blank" class="menu__name">- Site de shows responsivo</a>
+                    </div>
+                </div> -->
+            </section>
+
+            <!--========== CONTACT US ==========-->
+            <section class="contact section bd-container" id="contact">
+                <div class="contact__container bd-grid">
+                    <div class="contact__data">
+                        <span class="section-subtitle contact__initial">Vamos se conectar</span>
+                        <h2 class="section-title contact__initial">Contato</h2>
+                        <p class="contact__description">Quer saber mais? entre em contato no botão ao lado</p>
+                    </div>
+
+                    <div class="contact__button">
+                        <a href="mailto:aguinaldomneto@gmail.com?" class="button">Enviar e-mail</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!--========== FOOTER ==========-->
+        <footer class="footer section bd-container">
+            <div class="footer__container bd-grid">
+                <div class="footer__content">
+                    <a href="#" class="footer__logo">Portifólio de Aguinaldo Morais</a>
+                    <span class="footer__description">Redes sociais</span>
+                    <div>
+                        <a href="https://github.com/aguinaldomneto/" target="_blank" class="footer__social"><i class="fab fa-github"></i></a>
+                        <a href="https://www.instagram.com/aguinaldomneto/"                     class="footer__social" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/aguinaldo-morais-207ab67b/" 
+                        target="_blank" class="footer__social"><i class="fab fa-linkedin"></i></a>
+
+                        
+
+                    </div>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Menu</h3>
+                    <ul>
+                        <li><a href="#home" class="footer__link">Home</a></li>
+                        <li><a href="#about" class="footer__link">Sobre mim</a></li>
+                        <li><a href="#services" class="footer__link">Meus diferenciais</a></li>
+                        <li><a href="#menu" class="footer__link">Projetos</a></li>
+                        <li><a href="#contact" class="footer__link">Contato</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Endereço</h3>
+                    <ul>
+                        <li>Brasil, Brasilia, DF</li>
+                    </ul>
+                </div>
+            </div>
+
+            <p class="footer__copy">&#169; 2022 Aguinaldo Morais</p>
+        </footer>
+
+        <!--========== SCROLL REVEAL ==========-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--========== MAIN JS ==========-->
+        <script src="src/script.js"></script>
+
+        <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+        <!--https://fontawesome.com/license-->
+    </body>
+</html>
