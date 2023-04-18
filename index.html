@@ -1,247 +1,175 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>COFFEE SHOPS TIA ROSA</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="./src/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <header class="header">
-      <a href="#" class="logo">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQegHwbqKWA6FtA1mca7QyiGJv2ymsC-a_nqQ&usqp=CAU" />
-      </a>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-      <nav class="nav-bar">
-        <a href="#home">Home</a>
-        <a href="#menu">Menu</a>
-        <a href="#products">Produtos</a>
-        <a href="#review">Avaliações</a>
-        <a href="#about">Sobre</a>
-        <a href="#contact">Contato</a>
-        <a href="#blogs">Blogs</a>
-      </nav>
+        <!--========== CAIXA DE ÍCONES ==========-->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
 
-      <div class="icons">
-        <div class="fas fa-search" id="search-btn"></div>
-        <div class="fas fa-shopping-cart" id="cart-btn"></div>
-        <div class="fas fa-bars" id="menu-btn"></div>
-      </div>
+        <!--========== FAVICOM ==========-->
+        <link rel="shortcut icon" href="./img/eu.PNG" type="image/x-icon">
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+        <!--========== CSS ==========-->
+        <link rel="stylesheet" href="src/style.css">
 
-      <div class="search-form">
-        <input type="search" id="search-box" placeholder="Pesquise aqui ..." />
-        <label for="search-box" class="fas fa-search"></label>
-      </div>
+        <title>Coffe Shope Tia Rosa</title>
+    </head>
+    <body>
 
-      <div class="cart-items-container">
-        <div class="cart-item">
-          <span class="fas fa-times"></span>
-          <img src="./img/cart-item-1.png" alt="" />
-          <div class="content">
-            <h3>Item do carrinho 1</h3>
-            <div class="price">$15.99</div>
-          </div>
-        </div>
+        <!--========== SCROLL TOP ==========-->
+        <a href="#" class="scrolltop" id="scroll-top">
+            <i class='bx bx-chevron-up scrolltop__icon'></i>
+        </a>
 
-        <div class="cart-item">
-          <span class="fas fa-times"></span>
-          <img src="./img/cart-item-2.png" alt="" />
-          <div class="content">
-            <h3>Item do carrinho 2</h3>
-            <div class="price">$14.89</div>
-          </div>
-        </div>
+        <!--========== HEADER ==========-->
+        <header class="l-header" id="header">
+            <nav class="nav bd-container">
+                <a href="#" class="nav__logo">Coffe Shope Tia Rosa</a>
 
-        <div class="cart-item">
-          <span class="fas fa-times"></span>
-          <img src="./img/cart-item-3.png" alt="" />
-          <div class="content">
-            <h3>Item do carrinho 3</h3>
-            <div class="price">$13.69</div>
-          </div>
-        </div>
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">Sobre </a></li>
+                        <li class="nav__item"><a href="#services" class="nav__link">Produtos</a></li>
+                        <li class="nav__item"><a href="#contato" class="nav__link">contato</a></li>
+                      <!--  <li class="nav__item"><a href="#contact" class="nav__link">Contato</a></li>-->
 
-        <div class="cart-item">
-          <span class="fas fa-times"></span>
-          <img src="./img/cart-item-4.png" alt="" />
-          <div class="content">
-            <h3>Item do carrinho 4</h3>
-            <div class="price">$12.59</div>
-          </div>
-        </div>
+                        <li><i class='bx bx-moon change-theme' id="theme-button"></i></li>
+                    </ul>
+                </div>
 
-        <a href="#" class="btn">Fazer checkout</a>
-      </div>
-    </header>
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
 
-    <section class="home" id="home">
-      <div class="content">
-        <h3>COFFEE SHOPS TIA ROSA</h3>
-        <p>
-            Bem-vindo(a) à nossa COFFEE SHOPS TIA ROSA, um lugar onde você encontrará tudo o que precisa para preparar o café perfeito em casa. Nós oferecemos uma ampla seleção de cafés especiais, grãos selecionados de diversas partes do mundo, máquinas de café, acessórios e muito mais.
-        </p>
-        <a href="#" class="btn">Fale com um especialista</a>
-      </div>
-    </section>
+        <main class="l-main">
+            <!--========== HOME ==========-->
+            <section class="home" id="home">
+                <div class="home__container bd-container bd-grid">
+                    <div class="home__data">
+                        <h1 class="home__title">Bem vindo,</h1>
+                        <h2 class="home__subtitle">ao <br> Coffe shope da Tia Rosa.</h2>
+                        <a href="#services" class="button">Ver produtos</a>
+                    </div>
+    
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQegHwbqKWA6FtA1mca7QyiGJv2ymsC-a_nqQ&usqp=CAU" class="home__img">
+                </div>
+            </section>
+            
+            <!--========== ABOUT ==========-->
+            <section class="about section bd-container" id="about">
+                <div class="about__container  bd-grid">
+                    <div class="about__data">
+                        <span class="section-subtitle about__initial">Sobre </span>
+                        <h2 class="section-title about__initial">Especialistas em café</h2>
+                        <p class="about__description">Bem-vindo(a) à nossa COFFEE SHOPS TIA ROSA, um lugar onde você encontrará tudo o que precisa para preparar o café perfeito em casa. Nós oferecemos uma ampla seleção de cafés especiais, grãos selecionados de diversas partes do mundo, máquinas de café, acessórios e muito mais.</p>
+                        <a href=https://aguinaldomneto.github.io/github.pages/" class="button">Site</a>
+                    </div>
 
-    <section class="about" id="about">
-      <h1 class="heading"><span>Sobre</span> nós</h1>
+                    <img src="/img/no_computador.jpg" alt="" class="about__img">
+                </div>
+            </section>
 
-      <div class="row">
-        <div class="image">
-          <img src="https://img.freepik.com/fotos-gratis/close-up-de-maos-barista-faca-latte-arte-cafe-pintura_1150-12161.jpg?w=740&t=st=1681776273~exp=1681776873~hmac=1903f05cb663ef466dd2a546194c7e23426f4e3133f3897c16878e37e2c00ec9" alt="Xícara de café" />
-        </div>
+            <!--========== SERVICES ==========-->
+            
 
-        <div class="content">
-          <h3>Diferencial</h3>
-          <p>
-            Nossa seleção de café é cuidadosamente escolhida por nossos especialistas em café, que procuram por grãos de alta qualidade, torrados na medida certa para trazer o melhor sabor e aroma à sua xícara. Além disso, oferecemos uma variedade de blends e single origins para atender a todos os gostos e preferências.
-          </p>
-          <p>
-            Temos uma equipe de profissionais experientes que podem ajudá-lo(a) a escolher o café perfeito para você, além de fornecer informações e dicas sobre como preparar e armazenar o café corretamente. Se você é um(a) amante do café ou deseja se tornar um(a) especialista em café, nossa loja tem tudo o que você precisa para começar.
-          </p>
-          <a href="#" class="btn">Mais informações</a>
-        </div>
-      </div>
-    </section>
+            <section class="services section bd-container" id="services">
+                <span class="section-subtitle">Conheça nossos produtos</span>
+                <h2 class="section-title">excelencia em venda de produtos coffe</h2>
 
-    <section class="menu" id="menu">
-      <h1 class="heading"><span>Nosso menu </span>da loja física </h1>
-
-      <div class="box-container">
-        <div class="box">
-          <img src="https://img.freepik.com/fotos-premium/closeup-vazio-papel-artesanal-de-etiqueta-preta-em-branco-de-embalagem-de-saco-de-cafe-branco-moderno-rotulo-de-etiqueta-de-modelo-de-maquete-linha-de-embalagem-de-bolsa-com-ziper-de-papel-para-graos-de-cafe-mostrando-na-prateleira-de-madeira_36367-5209.jpg?w=740" alt="Item do menu" />
-          <h3>cafe Arabe</h3>
-          <div class="price">R$120,00 <span>R$322,90</span></div>
-          <a href="#" class="btn">Adicionar ao carrinho</a>
-        </div>
-
-        <div class="box">
-          <img src="https://img.freepik.com/fotos-gratis/biscoitos-preto-e-branco-no-pacote_140725-4381.jpg?w=740&t=st=1681776602~exp=1681777202~hmac=4b477cff3abe28d70abc1bedd83fcdf0a50971584ab56a22e43dd94d47e37e53" alt="Item do menu" />
-          <h3>cookie</h3>
-          <div class="price">R$12,50 <span>R$33,90</span></div>
-          <a href="#" class="btn">Adicionar ao carrinho</a>
-        </div>
-
-        <div class="box">
-            <img src=https://img.freepik.com/fotos-gratis/dois-grandes-pacotes-hermeticos-com-rotulos-em-branco-perto-de-vidro-transparente-com-graos-de-cafe-crus_346278-410.jpg?w=740&t=st=1681777495~exp=1681778095~hmac=2996978322c59e214bc00aa3a0acc0ee2f56537d5051e6e0675fdf6ad4d58ab4" alt="Item do menu" />
-            <h3>Café aromatizado de cereja</h3>
-            <div class="price">R$120,50 <span>R$33,90</span></div>
-            <a href="#" class="btn">Adicionar ao carrinho</a>
-          </div>
-
-        <div class="box">
-          <img src="https://img.freepik.com/fotos-gratis/embalagem-de-papel-e-cafeteira-geyser_23-2148180214.jpg?w=740&t=st=1681777114~exp=1681777714~hmac=36ae692255dcdfdb09ca700c41af439bd43c304c5090d38ebfa26cec1bad003f" alt="Item do menu" />
-          <h3>Cafeteira francesa</h3>
-          <div class="price">R$56,90 <span>R$120,90</span></div>
-          <a href="#" class="btn">Adicionar ao carrinho</a>
-        </div>
-
-        <div class="box">
-          <img src="https://img.freepik.com/fotos-gratis/xicara-de-cafe-fresco-vista-superior-em-cima-da-mesa_23-2148463942.jpg?w=740&t=st=1681777239~exp=1681777839~hmac=c21b35609cc226aa354e2f9f85e567cdd75636d892ec81fd674012832edba036" alt="Item do menu" />
-          <h3>Prensa black premium</h3>
-          <div class="price">R$160.50 <span>R$333.90</span></div>
-          <a href="#" class="btn">Adicionar ao carrinho</a>
-        </div>
-
-        <div class="box">
-          <img src="https://img.freepik.com/fotos-gratis/vista-lateral-da-mao-segurando-o-bule-emty_140725-12902.jpg?w=740&t=st=1681777566~exp=1681778166~hmac=d38558a799d488166940d0f1d0f35055f479c106979c8519105067849e09b04f" alt="Item do menu" />
-          <h3>Prensa francesa de café</h3>
-          <div class="price">$55.99 <span>120.99</span></div>
-          <a href="#" class="btn">Adicione ao carrinho</a>
-        </div>
-
-        <div class="box">
-          <img src="https://img.freepik.com/fotos-gratis/hipster-branco-cafe-da-manha-marrom_1220-1241.jpg?w=740&t=st=1681777692~exp=1681778292~hmac=90c381b2d99dc62f82e1bbc7927aed0f252ab16b1f45535d0c97393abcafa646" alt="Item do menu" />
-          <h3>Caneca coffe</h3>
-          <div class="price">R$25.85 <span>R$55.99</span></div>
-          <a href="#" class="btn">Adicione ao carrinho</a>
-        </div>
-
-        <div class="box">
-            <img src="https://img.freepik.com/fotos-gratis/closeup-tiro-de-uma-mulher-segurando-uma-caneca-de-ceramica-branca-com-letras-de-musicas-impressas-nele_181624-3022.jpg?w=740&t=st=1681777800~exp=1681778400~hmac=415ea2ee61654a23981aca130d2c6d4508188ff4e2c516a18b91401cf4eb7599" alt="Item do menu" />
-            <h3>Mug boig per tu</h3>
-            <div class="price">$55.99 <span>120.99</span></div>
-            <a href="#" class="btn">Adicione ao carrinho</a>
-          </div>
-
-          <div class="box">
-            <img src="https://img.freepik.com/fotos-gratis/vista-frontal-do-conceito-de-dia-do-chefe-com-copos_23-2148586446.jpg?w=740&t=st=1681777864~exp=1681778464~hmac=42761f3f715ba81d27ef724fedbb3c8241bab68ba8e7e2ff8f229b7392e5b0b7" alt="Item do menu" />
-            <h3>Caneca sorriso</h3>
-            <div class="price">$55.99 <span>120.99</span></div>
-            <a href="#" class="btn">Adicione ao carrinho</a>
-          </div>
-      </div>
-    </section>
-
-    <section class="contact" id="contact">
-      <h1 class="heading"><span>Nosso</span> contato</h1>
-
-      <div class="row">
-        <iframe
-          class="map"
-          src="https://www.openstreetmap.org/export/embed.html?bbox=-47.988431453704834%2C-16.032934784402332%2C-47.986071109771736%2C-16.03002691525146&amp;layer=mapnik"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        ></iframe>
-
-        <form action="">
-          <h3>Entre em contato</h3>
-          <div class="inputbox">
-            <span class="fas fa-user"></span>
-            <input type="text" placeholder="Nome" />
-          </div>
-
-          <div class="inputbox">
-            <span class="fas fa-envelope"></span>
-            <input type="email" placeholder="Email" />
-          </div>
-
-          <div class="inputbox">
-            <span class="fas fa-phone"></span>
-            <input type="number" placeholder="Contato" />
-          </div>
-        </form>
-      </div>
-    </section>
-
+                <div class="services__container  bd-grid">
+                    <div class="services__content">
+                        <img src="https://img.freepik.com/fotos-gratis/vista-frontal-do-conceito-de-dia-do-chefe-com-copos_23-2148586446.jpg?w=740&t=st=1681777864~exp=1681778464~hmac=42761f3f715ba81d27ef724fedbb3c8241bab68ba8e7e2ff8f229b7392e5b0b7" alt="Item do menu" />
+                        <h3 class="services__title">Caneca sorriso</h3>
+                        <div class="price">R$25.50</div>
+                        <a href="#" class="btn">Adicione ao carrinho</a>
+                    </div>
+                <div class="services__container  bd-grid">
+                    <div class="services__content">
+                        <img src="https://img.freepik.com/fotos-premium/closeup-vazio-papel-artesanal-de-etiqueta-preta-em-branco-de-embalagem-de-saco-de-cafe-branco-moderno-rotulo-de-etiqueta-de-modelo-de-maquete-linha-de-embalagem-de-bolsa-com-ziper-de-papel-para-graos-de-cafe-mostrando-na-prateleira-de-madeira_36367-5209.jpg?w=740" alt="Item do menu" />
+                        <h3 class="services__title">cafe Arabe</h3>
+                        <div class="price">$20.99</div>
+                        <a href="#" class="btn">Adicione ao carrinho</a>
+                    </div>
+                <div class="services__container  bd-grid">
+                    <div class="services__content">
+                        <img src="https://img.freepik.com/fotos-gratis/xicara-de-cafe-fresco-vista-superior-em-cima-da-mesa_23-2148463942.jpg?w=740&t=st=1681777239~exp=1681777839~hmac=c21b35609cc226aa354e2f9f85e567cdd75636d892ec81fd674012832edba036" alt="Item do menu" />
+                        <h3 class="services__title">Prensa black premium</h3>
+                        <div class="price">$155.99</div>
+                        <a href="#" class="btn">Adicione ao carrinho</a>
+                    </div>
+                <div class="services__container  bd-grid">
  
-    <section class="footer">
-      <div class="share">
-        <a
-        href="#"
-        target="_blank"
-        class="fab fa-instagram"
-      ></a>
-        <a href="#home" class="fab fa-facebook-f"></a>
-        <a href="#home" class="fab fa-twitter"></a>
- 
-        <a
-          href="https://www.linkedin.com/"
-          target="_blank"
-          class="fab fa-linkedin"
-        ></a>
-      </div>
+                </div>
+            </section>
 
 
 
 
-    </section>
-    <script src="./src/script.js"></script>
-  </body>
+            <!--========== CONTACT US ==========-->
+            <section class="contact section bd-container" id="contato">
+                <div class="contact__container bd-grid">
+                    <div class="contact__data">
+                        <span class="section-subtitle contact__initial">venha conversar com um de nossos especialistas</span>
+                        <h2 class="section-title contact__initial">Contato por e-mail</h2>
+                        <p class="contact__description">Quer saber mais? entre em contato no botão ao lado</p>
+                    </div>
+
+                    <div class="contact__button">
+                        <a href="mailto:aguinaldomneto@gmail.com?" class="button">Enviar e-mail</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!--========== FOOTER ==========-->
+        <footer class="footer section bd-container">
+            <div class="footer__container bd-grid">
+                <div class="footer__content">
+                    <a href="#" class="footer__logo">Criado por Aguinaldo Morais</a>
+                    <span class="footer__description">Redes sociais</span>
+                    <div>
+                        <a href="https://github.com/aguinaldomneto/" target="_blank" class="footer__social"><i class="fab fa-github"></i></a>
+                        <a href="https://www.instagram.com/aguinaldomneto/"                     class="footer__social" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/aguinaldo-morais-207ab67b/" 
+                        target="_blank" class="footer__social"><i class="fab fa-linkedin"></i></a>
+
+                        
+
+                    </div>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Menu</h3>
+                    <ul>
+                        <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">Sobre </a></li>
+                        <li class="nav__item"><a href="#services" class="nav__link">Produtos</a></li>
+                        <li class="nav__item"><a href="#contato" class="nav__link">contato</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Endereço</h3>
+                    <ul>
+                        <li>Brasil, Brasilia, DF</li>
+                    </ul>
+                </div>
+            </div>
+
+            <p class="footer__copy">&#169; 2022 Aguinaldo Morais</p>
+        </footer>
+
+        <!--========== SCROLL REVEAL ==========-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--========== MAIN JS ==========-->
+        <script src="src/script.js"></script>
+
+        <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+        <!--https://fontawesome.com/license-->
+    </body>
 </html>
